@@ -1,5 +1,20 @@
 {
   "name": "bats-core",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "description": "Supporting library for Bats test helpers",
+  "homepage": "https://github.com/ztombol/bats-core#readme",
+  "license": "CC0-1.0",
+  "author": "Zoltán Tömböl",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ztombol/bats-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ztombol/bats-core/issues"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  }
 }
