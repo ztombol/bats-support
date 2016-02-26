@@ -1,5 +1,8 @@
 # bats-core
 
+[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/ztombol/bats-core/master/LICENSE)
+[![Build Status](https://travis-ci.org/ztombol/bats-core.svg?branch=master)](https://travis-ci.org/ztombol/bats-core)
+
 `bats-core` is a supporting library providing common functions to test
 helper libraries written for [Bats][bats].
 
