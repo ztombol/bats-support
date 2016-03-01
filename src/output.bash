@@ -1,5 +1,5 @@
 #
-# bats-core - Supporting library for Bats test helpers
+# bats-support - Supporting library for Bats test helpers
 #
 # Written in 2016 by Zoltan Tombol <zoltan dot tombol at gmail dot com>
 #
