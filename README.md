@@ -10,6 +10,7 @@ them. Version numbering continues where `bats-core` left off.*
 # bats-support
 
 [![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/ztombol/bats-support/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/ztombol/bats-support.svg)](https://github.com/ztombol/bats-support/releases/latest)
 [![Build Status](https://travis-ci.org/ztombol/bats-support.svg?branch=master)](https://travis-ci.org/ztombol/bats-support)
 
 `bats-support` is a supporting library providing common functions to
