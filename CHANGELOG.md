@@ -13,7 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Renamed to `bats-support`
+- Library renamed to `bats-support`
 
 
 ## 0.1.0 - 2016-02-16
