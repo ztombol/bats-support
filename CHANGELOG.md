@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - `npm` support
+- Reporting arbitrary failures with `fail()` (moved from `bats-assert`)
 
 ### Changed
 
