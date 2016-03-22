@@ -34,4 +34,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   `batslib_get_max_single_line_key_width()`
 
 
-[Unreleased]: https://github.com/ztombol/varrick/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/ztombol/bats-support/compare/v0.1.0...HEAD
