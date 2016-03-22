@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## [Unreleased]
+## [0.2.0] - 2016-03-22
 
 ### Added
 
@@ -34,4 +34,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   `batslib_get_max_single_line_key_width()`
 
 
-[Unreleased]: https://github.com/ztombol/bats-support/compare/v0.1.0...HEAD
+[0.2.0]: https://github.com/ztombol/bats-support/compare/v0.1.0...v0.2.0
