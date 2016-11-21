@@ -19,6 +19,7 @@ test helper libraries written for [Bats][bats].
 Features:
 - [error reporting](#error-reporting)
 - [output formatting](#output-formatting)
+- [language tools](#language-and-execution)
 
 See the [shared documentation][bats-docs] to learn how to install and
 load this library.
@@ -120,6 +121,66 @@ actual (3 lines):
   have 3
 --
 ```
+
+## Language and Execution
+
+### Restricting invocation to specific locations
+
+Sometimes a helper may work properly only when called from a certain
+location. Because it depends on variables to be set or some other side
+effect.
+
+A good example is cleaning up temporary files only if the test has
+succeeded. The outcome of a test is only available in `teardown`. Thus,
+to avoid programming mistakes, it makes sense to restrict such a
+clean-up helper to that function.
+
+`batslib_is_caller` checks the call stack and returns `0` if the caller
+was invoked from a given function, and `1` otherwise. This function
+becomes really useful with the `--indirect` option, which allows calls
+through intermediate functions, e.g. the calling function may be called
+from a function that was called from the given function.
+
+Staying with the example above, the following code snippet implements a
+helper that is restricted to `teardown` or any function called
+indirectly from it.
+
+```shell
+clean_up() {
+  # Check caller.
+  if batslib_is_caller --indirect 'teardown'; then
+    echo "Must be called from \`teardown'" \
+      | batslib_decorate 'ERROR: clean_up' \
+      | fail
+    return $?
+  fi
+
+  # Body goes here...
+}
+```
+
+In some cases a helper may be called from multiple locations. For
+example, a logging function that uses the test name, description or
+number, information only available in `setup`, `@test` or `teardown`, to
+distinguish entries. The following snippet implements this restriction.
+
+```shell
+log_test() {
+  # Check caller.
+  if ! ( batslib_is_caller --indirect 'setup' \
+      || batslib_is_caller --indirect "$BATS_TEST_NAME" \
+      || batslib_is_caller --indirect 'teardown' )
+  then
+    echo "Must be called from \`setup', \`@test' or \`teardown'" \
+      | batslib_decorate 'ERROR: log_test' \
+      | fail
+    return $?
+  fi
+
+  # Body goes here...
+}
+```
+
 
 <!-- REFERENCES -->
 
