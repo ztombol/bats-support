@@ -1,7 +1,3 @@
-language: bash
-before_install:
-  - ./script/install-bats.sh
-before_script:
-  - export PATH="${HOME}/.local/bin:${PATH}"
-script:
-  - bats test
+language: node_js
+node_js: node
+cache: npm
