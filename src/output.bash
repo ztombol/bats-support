@@ -38,7 +38,7 @@ batslib_err() {
   { if (( $# > 0 )); then
       echo "$@"
     else
-      cat -
+      ( PATH="$_BATSLIB_PATH"; command cat -; )
     fi
   } >&2
 }
@@ -273,7 +273,7 @@ batslib_mark() {
 batslib_decorate() {
   echo
   echo "-- $1 --"
-  cat -
+  ( PATH="$_BATSLIB_PATH"; command cat -; )
   echo '--'
   echo
 }
