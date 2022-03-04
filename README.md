@@ -1,17 +1,8 @@
-*__Important:__ `bats-core` has been renamed to `bats-support`. GitHub
-automatically redirects all references, e.g. submodules and clones will
-continue to work, but you are encouraged to [update][github-rename]
-them. Version numbering continues where `bats-core` left off.*
-
-[github-rename]: https://help.github.com/articles/renaming-a-repository/
-
-- - - - -
-
 # bats-support
 
-[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/ztombol/bats-support/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/ztombol/bats-support.svg)](https://github.com/ztombol/bats-support/releases/latest)
-[![Build Status](https://travis-ci.org/ztombol/bats-support.svg?branch=master)](https://travis-ci.org/ztombol/bats-support)
+[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/bats-core/bats-support/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/bats-core/bats-support.svg)](https://github.com/bats-core/bats-support/releases/latest)
+[![Build Status](https://travis-ci.org/bats-core/bats-support.svg?branch=master)](https://travis-ci.org/bats-core/bats-support)
 
 `bats-support` is a supporting library providing common functions to
 test helper libraries written for [Bats][bats].
@@ -184,6 +175,6 @@ log_test() {
 
 <!-- REFERENCES -->
 
-[bats]: https://github.com/sstephenson/bats
-[bats-docs]: https://github.com/ztombol/bats-docs
-[bats-assert]: https://github.com/ztombol/bats-assert
+[bats]: https://github.com/bats-core/bats-core
+[bats-docs]: https://github.com/bats-core/bats-docs
+[bats-assert]: https://github.com/bats-core/bats-assert
