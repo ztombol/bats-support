@@ -2,7 +2,8 @@
 
 [![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/bats-core/bats-support/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/bats-core/bats-support.svg)](https://github.com/bats-core/bats-support/releases/latest)
-[![Build Status](https://travis-ci.org/bats-core/bats-support.svg?branch=master)](https://travis-ci.org/bats-core/bats-support)
+[![Build Status](https://github.com/bats-core/bats-support/workflows/Tests/badge.svg)](https://github.com/bats-core/bats-support/actions?query=workflow%3ATests)
+
 
 `bats-support` is a supporting library providing common functions to
 test helper libraries written for [Bats][bats].
